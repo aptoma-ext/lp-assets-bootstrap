@@ -1,0 +1,24 @@
+.alf-component.caption {
+	line-height: $base-line-height;
+
+	p {
+		margin: 0;
+	}
+
+	.headline {
+		font-family: Rubik-Bold;
+		font-size: 9pt;
+	}
+
+	.caption {
+		font-family: Rubik-Regular;
+		font-size: 9pt;
+
+	}
+
+	.credit {
+		display: block;
+		font-family: Rubik-Italic;
+		font-size: 8pt;
+	}
+}

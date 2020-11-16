@@ -1,0 +1,17 @@
+@import "_variables";
+
+.alf-rev-#{$revision} {
+	background: transparent;
+	box-sizing: border-box;
+	color: var(--color-black);
+	line-height: $base-line-height;
+	text-rendering: geometricPrecision;
+	-ro-glyph-layout-mode: quality;
+	widows: 1;
+	orphans: 1;
+
+	@import "_utils";
+	@import "_layout";
+	@import "components";
+	@import "themes";
+}

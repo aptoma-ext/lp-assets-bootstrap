@@ -1,0 +1,15 @@
+.fact-box {
+	.fact-box-header {
+		font-family: Rubik-Bold;
+		font-weight: normal;
+		font-size: 12pt;
+		line-height: 1em;
+		margin-top: 0;
+	}
+
+	.fact-box-body {
+		font-family: Rubik-Regular;
+		font-size: 10pt;
+		line-height: $base-line-height;
+	}
+}

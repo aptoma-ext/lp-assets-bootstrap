@@ -1,0 +1,52 @@
+.text-column {
+	--alf-word-spacing-min: 0.85;
+	--alf-word-spacing-desired: 0.95;
+	--alf-word-spacing-max: 1.10;
+	--alf-glyph-scaling-min: 0.965;
+	--alf-glyph-scaling-max: 1.04;
+	--alf-hyphens: 1;
+	--alf-hyphens-language: nb-no;
+	--alf-hyphens-after-first: 3;
+	--alf-hyphens-before-last: 2;
+	-ro-pdf-overprint-content: mode1;
+
+	.row {
+		display: block;
+		width: 100%;
+		height: $base-line-height;
+	}
+
+	.alf-block {
+		font-family: NoticiaText-Regular;
+		font-size: 12px;
+		margin: 0;
+		padding: 0;
+	}
+
+	p, h1, h2, h3, h4, h5, h6, blockquote {
+		margin: 0;
+		padding: 0;
+		color: var(--color-black);
+		font-kerning: normal;
+		-ro-pdf-overprint-content: mode1;
+	}
+}
+
+.alf-justify-text {
+	.body-text {
+		span {
+			text-align: justify;
+
+			&.row {
+				text-align: justify;
+				text-align-last: justify;
+				-webkit-text-align-last: justify;
+			}
+
+			&.row:last-of-type {
+				text-align-last: auto;
+				-webkit-text-align-last: auto;
+			}
+		}
+	}
+}

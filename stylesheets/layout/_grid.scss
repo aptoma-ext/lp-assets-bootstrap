@@ -1,0 +1,34 @@
+.alf-grid {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	padding: 0;
+
+	--alf-grid-line-height: #{$base-line-height};
+	--alf-grid-top-line-offset: #{$grid-line-offset};
+	--alf-grid-margin-inner: 17mm;
+	--alf-grid-margin-outer: 0;
+	--alf-grid-column-gap: 4mm;
+	--alf-grid-anchor: bottom;
+
+	[class*="alf-col-"] {
+		position: absolute;
+		margin-top: 0;
+		margin-bottom: $base-line-height;
+	}
+
+	.alf-col-top {
+		margin-top: 0;
+	}
+
+	.alf-col-bottom {
+		margin-bottom: 0;
+	}
+
+	&.alf-grid--20 {
+		--alf-grid-columns: 20;
+		--alf-grid-column-width: 8.5mm;
+	}
+}

@@ -1,0 +1,32 @@
+.headline {
+	-ro-pdf-overprint-content: mode1;
+
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+	--alf-text-respect-line-breaks: 0;
+	--alf-text-size-units: pt;
+	--alf-text-size-min: 25;
+	--alf-text-size-max: 65;
+	--alf-text-lines: 0;
+	--alf-text-auto-size-disabled: 1;
+
+	--headline-color: var(--color-black);
+	--headline-size: 44pt;
+	--headline-line-height: 1.01em;
+	--headline-font-family: PlayfairDisplay-SemiBold;;
+	--headline-letter-spacing: -0.02em;
+
+	* {
+		-ro-pdf-overprint-content: mode1;
+	}
+
+	h1 {
+		margin: 0;
+		font-weight: normal;
+		color: var(--headline-color);
+		font-size: var(--headline-size);
+		line-height: var(--headline-line-height);
+		font-family: var(--headline-font-family);
+		letter-spacing: var(--headline-letter-spacing);
+	}
+}
