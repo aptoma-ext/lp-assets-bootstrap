@@ -104,6 +104,10 @@
 		}
 	},
 	"componentOptions": {
+		".alf-is-auto-adjustable": {
+			"title": "Auto size to fit body text",
+			"type": "boolean"
+		},
 		"grid-align": {
 			"title": "Grid alignment",
 			"type": "object",
