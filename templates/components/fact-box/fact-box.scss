@@ -1,15 +1,27 @@
 .fact-box {
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+
 	.fact-box-header {
-		font-family: Rubik-Bold;
+		font-family: Rubik-SemiBold;
 		font-weight: normal;
 		font-size: 12pt;
-		line-height: 1em;
+		line-height: $base-line-height;
 		margin-top: 0;
+		margin-bottom: 6pt;
 	}
 
 	.fact-box-body {
 		font-family: Rubik-Regular;
-		font-size: 10pt;
+		font-size: 9pt;
 		line-height: $base-line-height;
+
+		p {
+			margin: 0 0 $base-line-height 0;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
 	}
 }
