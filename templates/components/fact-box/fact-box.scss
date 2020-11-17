@@ -2,12 +2,17 @@
 	--alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
 
+	box-sizing: border-box;
+	padding: 0 2mm 0 2mm;
+
 	.fact-box-header {
+		border-top: 2.5pt solid var(--color-black);
 		font-family: Rubik-SemiBold;
 		font-weight: normal;
 		font-size: 12pt;
 		line-height: $base-line-height;
-		margin-top: 0;
+		padding-top: $base-line-height;
+		margin-top: 6pt;
 		margin-bottom: 6pt;
 	}
 
@@ -15,13 +20,10 @@
 		font-family: Rubik-Regular;
 		font-size: 9pt;
 		line-height: $base-line-height;
+		transform: translateY(1.8pt);
 
 		p {
 			margin: 0 0 $base-line-height 0;
-
-			&:last-child {
-				margin: 0;
-			}
 		}
 	}
 }

@@ -1,6 +1,9 @@
 // The byline for the article also contains a `<div class="byline">`,
 // so `.alf-component` is added to make sure we target the top element only
 .alf-component.byline {
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+
 	border-width: 2pt 0 var(--unit-thin) 0;
 	border-style: solid;
 	border-color: var(--color-black);

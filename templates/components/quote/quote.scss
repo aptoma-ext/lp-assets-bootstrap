@@ -1,3 +1,22 @@
 .quote {
 	font-family: Rubik-Regular;
+
+	blockquote {
+		margin: 0;
+		padding: 0;
+
+	}
+
+	.quote-text {
+		margin: 0;
+		font-family: Rubik-Light;
+		font-size: 14pt;
+		line-height: 0.9em;;
+		font-weight: normal;
+	}
+
+	.quote-creator {
+		font-family: Rubik-LightItalic;
+		margin: $base-line-height 0 0 0;
+	}
 }
