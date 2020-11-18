@@ -12,6 +12,6 @@
     "live-reload": "dredition layoutpreview live-reload -c broadcast"
   },
   "devDependencies": {
-    "@aptoma/dredition-cli": "github:aptoma/dredition-cli#lp-live-reload"
+    "@aptoma/dredition-cli": "^1.1.0"
   }
 }
