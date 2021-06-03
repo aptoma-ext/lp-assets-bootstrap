@@ -9,9 +9,10 @@
   },
   "author": "Peter Rudolfsen <peter@aptoma.com>",
   "scripts": {
-    "live-reload": "dredition layoutpreview live-reload -c broadcast"
+    "live-reload": "dredition layoutpreview live-reload -c broadcast",
+    "build": "dredition layoutpreview build -c broadcast"
   },
   "devDependencies": {
-    "@aptoma/dredition-cli": "^1.1.0"
+    "@aptoma/dredition-cli": "^1.2.0"
   }
 }
