@@ -38,22 +38,3 @@
 		-ro-pdf-overprint-content: mode1;
 	}
 }
-
-.alf-justify-text {
-	.body-text {
-		span {
-			text-align: justify;
-
-			&.row {
-				text-align: justify;
-				text-align-last: justify;
-				-webkit-text-align-last: justify;
-			}
-
-			&.row:last-of-type {
-				text-align-last: auto;
-				-webkit-text-align-last: auto;
-			}
-		}
-	}
-}
