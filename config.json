@@ -1,13 +1,8 @@
 {
 	"alf": {
-		"pxPrecision": 0.01,
 		"fonts": [],
 		"hyphenation": {
-			"nb-no": {
-				"afterFirst": 3,
-				"beforeLast": 3,
-				"exceptions": []
-			}
+			"exceptions": []
 		}
 	},
 	"formats": {
