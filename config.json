@@ -30,7 +30,10 @@
 			"uniqueItems": true,
 			"items": {
 				"type": "string",
-				"enum": ["default", "blue"],
+				"enum": [
+					"default",
+					"blue"
+				],
 				"enumNames": [
 					"Default",
 					"Blue"
@@ -210,6 +213,28 @@
 						"3 lines",
 						"4 lines"
 					]
+				}
+			}
+		},
+		"box": {
+			"title": "Box",
+			"type": "object",
+			"properties": {
+				".box--{color}": {
+					"title": "Background color",
+					"type": "array",
+					"uniqueItems": true,
+					"items": {
+						"type": "string",
+						"enum": [
+							"white",
+							"black"
+						],
+						"enumNames": [
+							"White",
+							"Black"
+						]
+					}
 				}
 			}
 		}
