@@ -6,14 +6,17 @@
 	margin-left: 0;
 }
 
-@for $i from 0 through 5 {
+@for $i from -5 through 10 {
 	$plural: if($i == 1, '', 's');
 
+	// While using !important is adviced against,
+	// this is a valid exception as we really want to override
+	// any other margin set when these classes are used
 	.u-margin-top--#{$i}-line#{$plural} {
-		margin-top: ($grid-line-height * $i);
+		margin-top: ($grid-line-height * $i) !important;
 	}
 
 	.u-margin-bottom--#{$i}-line#{$plural} {
-		margin-bottom: ($grid-line-height * $i);
+		margin-bottom: ($grid-line-height * $i) !important;
 	}
 }
