@@ -8,7 +8,6 @@
 	--alf-text-size-min: 25;
 	--alf-text-size-max: 65;
 	--alf-text-lines: 0;
-	--alf-text-auto-size-disabled: 1;
 
 	--headline-color: var(--color-black);
 	--headline-size: 44pt;
@@ -18,6 +17,12 @@
 
 	* {
 		-ro-pdf-overprint-content: mode1;
+	}
+
+	&.alf-text-auto-size {
+		// Setting the font size to the average of min/max so it can grow/shrink
+		// This will make sure the headline can always be automatically adjusted up or down
+		font-size: calc(((var(--alf-text-size-min) + var(--alf-text-size-max)) / 2) * 1pt);
 	}
 
 	h1 {
