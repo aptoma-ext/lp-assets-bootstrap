@@ -1,6 +1,6 @@
 @import "_variables";
 
-.alf-rev-#{$revision} {
+.alf-layout {
 	// Recommended to have these feature flags enabled (https://docs.aptoma.com/dredition/setup-print/layoutpreview-setup/css-for-print-design#feature-flags)
 	--alf-align-bottom-enabled: 1;
 	--alf-align-images-enabled: 1;

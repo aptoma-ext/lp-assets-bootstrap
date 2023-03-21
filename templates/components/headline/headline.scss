@@ -34,13 +34,4 @@
 		font-family: var(--headline-font-family);
 		letter-spacing: var(--headline-letter-spacing);
 	}
-
-	.alf-header-line {
-		display: block
-	}
-
-	// Prevents a header line from accidentally wrapping into the next line when creating a PDF
-	.alf-header-line-inner {
-		white-space: nowrap;
-	}
 }

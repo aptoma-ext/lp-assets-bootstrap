@@ -1,6 +1,8 @@
 {
+	"assetBuilderConfig": {
+		"target": "layoutpreview"
+	},
 	"alf": {
-		"fonts": [],
 		"hyphenation": {
 			"exceptions": []
 		}

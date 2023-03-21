@@ -21,6 +21,7 @@
 		font-size: 9pt;
 		line-height: $grid-line-height;
 		transform: translateY(1.8pt);
+		--alf-hyphenate: 1;
 
 		p {
 			margin: 0 0 $grid-line-height 0;
