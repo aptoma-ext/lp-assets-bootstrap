@@ -6,7 +6,7 @@
 		margin: 0;
 		font-family: Rubik-Regular;
 		font-size: 9pt;
-		line-height: $grid-line-height;
+		line-height: var(--baseline-height);
 	}
 
 	.headline {

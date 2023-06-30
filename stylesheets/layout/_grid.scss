@@ -6,8 +6,8 @@
 	right: 0;
 	padding: 0;
 
-	--alf-grid-line-height: #{$grid-line-height};
-	--alf-grid-top-line-offset: #{$grid-top-line-offset};
+	--alf-grid-line-height: var(--baseline-height);
+	--alf-grid-top-line-offset: var(--top-line-offset);
 	--alf-grid-margin-inner: 17mm;
 	--alf-grid-margin-outer: 0;
 	--alf-grid-column-gap: 4mm;
