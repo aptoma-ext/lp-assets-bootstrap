@@ -17,7 +17,7 @@
 
 	.quote-creator {
 		font-family: Rubik-LightItalic;
-		margin: $grid-line-height 0 0 0;
+		margin: var(--baseline-height) 0 0 0;
 		--alf-hyphenate: 1;
 	}
 }

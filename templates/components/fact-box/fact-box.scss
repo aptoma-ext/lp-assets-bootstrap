@@ -10,8 +10,8 @@
 		font-family: Rubik-SemiBold;
 		font-weight: normal;
 		font-size: 12pt;
-		line-height: $grid-line-height;
-		padding-top: $grid-line-height;
+		line-height: var(--baseline-height);
+		padding-top: var(--baseline-height);
 		margin-top: 6pt;
 		margin-bottom: 6pt;
 	}
@@ -19,12 +19,12 @@
 	.fact-box-body {
 		font-family: Rubik-Regular;
 		font-size: 9pt;
-		line-height: $grid-line-height;
+		line-height: var(--baseline-height);
 		transform: translateY(1.8pt);
 		--alf-hyphenate: 1;
 
 		p {
-			margin: 0 0 $grid-line-height 0;
+			margin: 0 0 var(--baseline-height) 0;
 		}
 	}
 }

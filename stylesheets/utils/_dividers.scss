@@ -4,7 +4,7 @@
 	--divider-alignment: bottom;
 	--divider-color: var(--color-black);
 	--divider-thickness: var(--unit-thin);
-	height: $grid-line-height;
+	height: var(--baseline-height);
 	min-height: 0;
 	display: flex;
 	justify-content: center;

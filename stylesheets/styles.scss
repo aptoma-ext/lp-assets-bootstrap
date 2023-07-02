@@ -1,14 +1,15 @@
-@import "_variables";
-
 .alf-layout {
 	// Recommended to have these feature flags enabled (https://docs.aptoma.com/dredition/setup-print/layoutpreview-setup/css-for-print-design#feature-flags)
 	--alf-align-bottom-enabled: 1;
 	--alf-align-images-enabled: 1;
 
+	--baseline-height: 10.5pt;
+	--top-line-offset: 5.5pt;
+
 	background: transparent;
 	box-sizing: border-box;
 	color: var(--color-black);
-	line-height: $grid-line-height;
+	line-height: var(--baseline-height);
 	text-rendering: geometricPrecision;
 	-ro-glyph-layout-mode: quality;
 	widows: 1;
