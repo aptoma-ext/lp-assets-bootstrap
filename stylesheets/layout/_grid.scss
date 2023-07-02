@@ -1,11 +1,4 @@
 .alf-grid {
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	padding: 0;
-
 	--alf-grid-line-height: var(--baseline-height);
 	--alf-grid-top-line-offset: var(--top-line-offset);
 	--alf-grid-margin-inner: 17mm;
@@ -14,9 +7,8 @@
 	--alf-grid-anchor: bottom;
 
 	[class*="alf-col-"] {
-		position: absolute;
 		margin-top: 0;
-		margin-bottom: $grid-line-height;
+		margin-bottom: var(--baseline-height);
 	}
 
 	.alf-col-top {
