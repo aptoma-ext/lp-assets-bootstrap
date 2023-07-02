@@ -13,10 +13,10 @@
 	// this is a valid exception as we really want to override
 	// any other margin set when these classes are used
 	.u-margin-top--#{$i}-line#{$plural} {
-		margin-top: (var(--baseline-height) * $i) !important;
+		margin-top: calc(var(--baseline-height) * #{$i}) !important;
 	}
 
 	.u-margin-bottom--#{$i}-line#{$plural} {
-		margin-bottom: (var(--baseline-height) * $i) !important;
+		margin-bottom: calc(var(--baseline-height) * #{$i}) !important;
 	}
 }
