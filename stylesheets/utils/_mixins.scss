@@ -1,3 +1,5 @@
+@use 'sass:math';
+
 @mixin cmyk($name, $c, $m, $y, $k, $a: 1) {
 	$c: to-dec($c);
 	$m: to-dec($m);
@@ -18,7 +20,7 @@
 
 @function to-dec($value) {
 	@if unit($value) == '%' {
-		$value: $value / 100%;
+		$value: math.div($value, 100%);
 	}
 
 	@return $value;
