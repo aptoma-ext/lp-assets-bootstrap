@@ -16,32 +16,27 @@
 
 	.alf-block {
 		font-family: NoticiaText-Regular;
+		font-kerning: normal;
 		font-size: 12px;
 		margin: 0;
 		padding: 0;
+		color: var(--color-black);
 
 		// Push it slightly down to align the text to the baseline
 		transform: translateY(1.4pt);
-	}
 
-	p, h1, h2, h3, h4, h5, h6, blockquote {
-		margin: 0;
-		padding: 0;
-		color: var(--color-black);
-		font-kerning: normal;
-		-ro-pdf-overprint-content: mode1;
-	}
-
-	h1, h2, h3 {
-		--subhead-margin-top: var(--baseline-height);
-		margin-top: var(--subhead-margin-top);
-	}
-
-	.alf-block {
 		&.alf-block-is-first,
 		&.alf-is-overflow,
 		&:first-child {
 			margin-top: 0;
+		}
+	}
+
+	h1, h2, h3 {
+		// Add class name to increase selector weight
+		&.alf-block {
+			--subhead-margin-top: var(--baseline-height);
+			margin-top: var(--subhead-margin-top);
 		}
 	}
 }
