@@ -31,4 +31,17 @@
 		font-kerning: normal;
 		-ro-pdf-overprint-content: mode1;
 	}
+
+	h1, h2, h3 {
+		--subhead-margin-top: var(--baseline-height);
+		margin-top: var(--subhead-margin-top);
+	}
+
+	.alf-block {
+		&.alf-block-is-first,
+		&.alf-is-overflow,
+		&:first-child {
+			margin-top: 0;
+		}
+	}
 }
