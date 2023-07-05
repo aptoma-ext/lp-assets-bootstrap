@@ -4,19 +4,22 @@
 	blockquote {
 		margin: 0;
 		padding: 0;
-
 	}
 
 	.quote-text {
 		margin: 0;
-		font-family: Rubik-Light;
+		font-family: Rubik-LightItalic;
 		font-size: 14pt;
 		line-height: 0.9em;;
 		font-weight: normal;
+		text-align: center;
+		padding: 4mm;
 	}
 
 	.quote-creator {
-		font-family: Rubik-LightItalic;
+		text-align: right;
+		font-size: 10pt;
+		font-family: Rubik-Light;
 		margin: var(--baseline-height) 0 0 0;
 		--alf-hyphenate: 1;
 	}

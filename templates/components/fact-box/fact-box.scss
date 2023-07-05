@@ -1,31 +1,30 @@
 .fact-box {
 	--alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
-
 	box-sizing: border-box;
-	padding: 0 2mm 0 2mm;
+	background-color: var(--color-blue-light);
 
 	ul {
 		padding-left: 4mm;
 	}
 
 	.fact-box-header {
-		border-top: 2.5pt solid var(--color-black);
 		font-family: Rubik-SemiBold;
 		font-weight: normal;
 		font-size: 12pt;
 		line-height: var(--baseline-height);
-		padding-top: var(--baseline-height);
-		margin-top: 6pt;
-		margin-bottom: 6pt;
+		padding: 2mm;
+		margin: 0;
+		background-color: var(--color-blue-gray);
 	}
 
 	.fact-box-body {
+		--alf-hyphenate: 1;
 		font-family: Rubik-Regular;
 		font-size: 9pt;
 		line-height: var(--baseline-height);
 		transform: translateY(1.8pt);
-		--alf-hyphenate: 1;
+		padding: 2mm;
 
 		p {
 			margin: 0 0 var(--baseline-height) 0;
