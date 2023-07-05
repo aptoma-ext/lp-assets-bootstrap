@@ -104,9 +104,25 @@
 		}
 	},
 	"componentOptions": {
-		".alf-is-auto-adjustable": {
-			"title": "Auto size to fit body text",
-			"type": "boolean"
+		"picture": {
+			"title": "Picture",
+			"type": "object",
+			"properties": {
+				".alf-is-auto-adjustable": {
+					"title": "Auto size to fit body text",
+					"type": "boolean"
+				}
+			}
+		},
+		"auto-size-text": {
+			"title": "Auto size text",
+			"type": "object",
+			"properties": {
+				".alf-text-auto-size": {
+					"title": "Enabled",
+					"type": "boolean"
+				}
+			}
 		},
 		"grid-align": {
 			"title": "Grid alignment",

@@ -5,6 +5,10 @@
 	box-sizing: border-box;
 	padding: 0 2mm 0 2mm;
 
+	ul {
+		padding-left: 4mm;
+	}
+
 	.fact-box-header {
 		border-top: 2.5pt solid var(--color-black);
 		font-family: Rubik-SemiBold;
