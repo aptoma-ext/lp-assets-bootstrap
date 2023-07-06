@@ -39,4 +39,14 @@
 			margin-top: var(--subhead-margin-top);
 		}
 	}
+
+	p {
+		text-indent: 3.7mm;
+	}
+
+	.alf-block-after-h1,
+	.alf-block-after-h2,
+	.alf-block-after-h3 {
+		text-indent: 0;
+	}
 }
