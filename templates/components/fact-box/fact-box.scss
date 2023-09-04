@@ -20,6 +20,7 @@
 
 	.fact-box-body {
 		--alf-hyphenate: 1;
+		--alf-rowify-select: h1, h2, h3, p, li;
 		font-family: Rubik-Regular;
 		font-size: 9pt;
 		line-height: var(--baseline-height);
