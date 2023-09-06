@@ -238,19 +238,35 @@
 			"title": "Box",
 			"type": "object",
 			"properties": {
-				".box--{color}": {
+				"--box-background-color": {
 					"title": "Background color",
 					"type": "array",
 					"uniqueItems": true,
 					"items": {
 						"type": "string",
 						"enum": [
-							"white",
-							"black"
+							"var(--color-white)",
+							"var(--color-black)",
+							"var(--color-green)",
+							"var(--color-blue-gray)",
+							"var(--color-blue-light)",
+							"var(--color-olive)",
+							"var(--color-atomic-tangerine)",
+							"var(--color-sepia)",
+							"var(--color-coffee)",
+							"var(--color-flax)"
 						],
 						"enumNames": [
 							"White",
-							"Black"
+							"Black",
+							"Green",
+							"Blue gray",
+							"Blue light",
+							"Olive",
+							"Atomic tangerine",
+							"Sepia",
+							"Coffee",
+							"Flax"
 						]
 					}
 				}

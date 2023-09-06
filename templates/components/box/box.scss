@@ -1,18 +1,12 @@
 .box {
-	min-height: $base-line-height;
+	--box-background-color: transparent;
+	min-height: var(--baseline-height);
 	--alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
+	background-color: var(--box-background-color);
 
 	&.alf-is-auto-adjustable {
 		min-height: 0;
 		margin-bottom: 0;
-	}
-
-	&.box--white {
-		background-color: var(--color-white);
-	}
-
-	&.box--black {
-		background-color: var(--color-black);
 	}
 }

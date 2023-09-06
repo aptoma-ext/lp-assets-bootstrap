@@ -4,4 +4,9 @@
 	@include cmyk(--color-green, 70%, 0, 90%, 0);
 	@include cmyk(--color-blue-gray, 0.4, 0.08, 0, 0.31, 1);
 	@include cmyk(--color-blue-light, 0.0525, 0.05, 0, 0.0525, 1);
+	@include cmyk(--color-olive, 0, 12%, 86%, 39%);
+	@include cmyk(--color-atomic-tangerine, 0, 45%, 71%, 2%);
+	@include cmyk(--color-sepia, 0, 38%, 100%, 64%);
+	@include cmyk(--color-coffee, 0, 25%, 52%, 59%);
+	@include cmyk(--color-flax, 0, 6%, 38%, 2%);
 }
