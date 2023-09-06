@@ -1,8 +1,8 @@
 .box {
 	--box-background-color: transparent;
-	min-height: var(--baseline-height);
 	--alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
+	min-height: var(--baseline-height);
 	background-color: var(--box-background-color);
 
 	&.alf-is-auto-adjustable {
