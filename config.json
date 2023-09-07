@@ -32,47 +32,47 @@
 			"anyOf": [
 				{
 					"type": "string",
-					"enum": ["var(--color-white)"],
+					"enum": ["white"],
 					"title": "White"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-black)"],
+					"enum": ["black"],
 					"title": "Black"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-blue-gray)"],
+					"enum": ["blue-gray"],
 					"title": "Blue gray"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-blue-light)"],
+					"enum": ["blue-light"],
 					"title": "Blue light"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-olive)"],
+					"enum": ["olive"],
 					"title": "Olive"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-atomic-tangerine)"],
+					"enum": ["atomic-tangerine"],
 					"title": "Atomic tangerine"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-sepia)"],
+					"enum": ["sepia"],
 					"title": "Sepia"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-coffee)"],
+					"enum": ["coffee"],
 					"title": "Coffee"
 				},
 				{
 					"type": "string",
-					"enum": ["var(--color-flax)"],
+					"enum": ["flax"],
 					"title": "Flax"
 				}
 			]
@@ -293,14 +293,20 @@
 			"properties": {
 				"--box-background-color": {
 					"title": "Background color",
-					"$ref": "#/definitions/colors"
+					"$ref": "#/definitions/colors",
+					"x-layoutpreview": {
+						"template": "var(--color-{value})"
+					}
 				},
 				"--rotation": {
 					"title": "Rotate",
 					"type": "integer",
 					"minimum": -180,
 					"maximum": 180,
-					"ui:widget": "range"
+					"x-layoutpreview": {
+						"widget": "range",
+						"template": "{value}deg"
+					}
 				}
 			}
 		}
