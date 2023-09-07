@@ -298,8 +298,12 @@
 						"template": "var(--color-{value})"
 					}
 				},
-				"--rotation": {
+				".rotate": {
 					"title": "Rotate",
+					"type": "boolean"
+				},
+				"--rotation": {
+					"title": "Degrees",
 					"type": "integer",
 					"minimum": -180,
 					"maximum": 180,
