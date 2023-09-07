@@ -312,7 +312,7 @@
 					"then": {
 						"properties": {
 							"--rotation": {
-								"title": "Degreeees",
+								"title": "Degrees",
 								"type": "integer",
 								"minimum": -180,
 								"maximum": 180,
