@@ -25,6 +25,59 @@
 			"title": "10 column grid"
 		}
 	},
+	"definitions": {
+		"colors": {
+			"title": "Color",
+			"type": "string",
+			"anyOf": [
+				{
+					"type": "string",
+					"enum": ["var(--color-white)"],
+					"title": "White"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-black)"],
+					"title": "Black"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-blue-gray)"],
+					"title": "Blue gray"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-blue-light)"],
+					"title": "Blue light"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-olive)"],
+					"title": "Olive"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-atomic-tangerine)"],
+					"title": "Atomic tangerine"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-sepia)"],
+					"title": "Sepia"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-coffee)"],
+					"title": "Coffee"
+				},
+				{
+					"type": "string",
+					"enum": ["var(--color-flax)"],
+					"title": "Flax"
+				}
+			]
+		}
+	},
 	"templateOptions": {
 		".theme--{theme}": {
 			"title": "Theme",
@@ -243,31 +296,7 @@
 					"type": "array",
 					"uniqueItems": true,
 					"items": {
-						"type": "string",
-						"enum": [
-							"var(--color-white)",
-							"var(--color-black)",
-							"var(--color-green)",
-							"var(--color-blue-gray)",
-							"var(--color-blue-light)",
-							"var(--color-olive)",
-							"var(--color-atomic-tangerine)",
-							"var(--color-sepia)",
-							"var(--color-coffee)",
-							"var(--color-flax)"
-						],
-						"enumNames": [
-							"White",
-							"Black",
-							"Green",
-							"Blue gray",
-							"Blue light",
-							"Olive",
-							"Atomic tangerine",
-							"Sepia",
-							"Coffee",
-							"Flax"
-						]
+						"$ref": "#/definitions/colors"
 					}
 				}
 			}
