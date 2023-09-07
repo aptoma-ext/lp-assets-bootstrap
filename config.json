@@ -27,7 +27,7 @@
 	},
 	"definitions": {
 		"colors": {
-			"title": "Color",
+			"title": "Colors",
 			"type": "string",
 			"anyOf": [
 				{
