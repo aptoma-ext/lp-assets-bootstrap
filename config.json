@@ -293,11 +293,7 @@
 			"properties": {
 				"--box-background-color": {
 					"title": "Background color",
-					"type": "array",
-					"uniqueItems": true,
-					"items": {
-						"$ref": "#/definitions/colors"
-					}
+					"$ref": "#/definitions/colors"
 				}
 			}
 		}
