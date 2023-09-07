@@ -306,11 +306,8 @@
 			"allOf": [
 				{
 					"if": {
-						"properties": {
-							".rotate": {
-								"const": true
-							}
-						}
+						"properties": {".rotate": {"const": true}},
+						"required": [".rotate"]
 					},
 					"then": {
 						"properties": {
