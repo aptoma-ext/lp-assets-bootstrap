@@ -1,9 +1,11 @@
 .box {
+	--rotation: 0;
 	--box-background-color: transparent;
 	--alf-grid-align-top: baseline;
 	--alf-grid-align-bottom: baseline;
 	min-height: var(--baseline-height);
 	background-color: var(--box-background-color);
+	rotate: calc(1deg * var(--rotation));
 
 	&.alf-is-auto-adjustable {
 		min-height: 0;
