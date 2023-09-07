@@ -294,6 +294,13 @@
 				"--box-background-color": {
 					"title": "Background color",
 					"$ref": "#/definitions/colors"
+				},
+				"--rotation": {
+					"title": "Rotate",
+					"type": "integer",
+					"minimum": -180,
+					"maximum": 180,
+					"ui:widget": "range"
 				}
 			}
 		}
