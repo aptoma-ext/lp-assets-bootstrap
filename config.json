@@ -301,18 +301,33 @@
 				".rotate": {
 					"title": "Rotate",
 					"type": "boolean"
-				},
-				"--rotation": {
-					"title": "Degrees",
-					"type": "integer",
-					"minimum": -180,
-					"maximum": 180,
-					"x-layoutpreview": {
-						"widget": "range",
-						"template": "{value}deg"
+				}
+			},
+			"allOf": [
+				{
+					"if": {
+						"properties": {
+							".rotate": {
+								"const": true
+							}
+						}
+					},
+					"then": {
+						"properties": {
+							"--rotation": {
+								"title": "Degreeees",
+								"type": "integer",
+								"minimum": -180,
+								"maximum": 180,
+								"x-layoutpreview": {
+									"widget": "range",
+									"template": "{value}deg"
+								}
+							}
+						}
 					}
 				}
-			}
+			]
 		}
 	}
 }
