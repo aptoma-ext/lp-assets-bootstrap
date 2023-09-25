@@ -15,6 +15,10 @@
 	widows: 1;
 	orphans: 1;
 
+	.alf-component {
+		shape-outside: var(--shape, none);
+	}
+
 	@import "_utils";
 	@import "_layout";
 	@import "components";
