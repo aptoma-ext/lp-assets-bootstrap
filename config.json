@@ -83,37 +83,37 @@
 			"anyOf": [
 				{
 					"type": "string",
-					"enum": ["circle(50% at 50% 50%)"],
+					"enum": ["circle"],
 					"title": "Circle"
 				},
 				{
 					"type": "string",
-					"enum": ["polygon(50% 0%, 0% 100%, 100% 100%)"],
+					"enum": ["triangle"],
 					"title": "Triangle"
 				},
 				{
 					"type": "string",
-					"enum": ["polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%)"],
+					"enum": ["trapezoid"],
 					"title": "Trapezoid"
 				},
 				{
 					"type": "string",
-					"enum": ["polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)"],
+					"enum": ["rhombus"],
 					"title": "Rhombus"
 				},
 				{
 					"type": "string",
-					"enum": ["polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)"],
+					"enum": ["pentagon"],
 					"title": "Pentagon"
 				},
 				{
 					"type": "string",
-					"enum": ["polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)"],
+					"enum": ["hexagon"],
 					"title": "Hexagon"
 				},
 				{
 					"type": "string",
-					"enum": ["polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%)"],
+					"enum": ["heptagon"],
 					"title": "Heptagon"
 				}
 			]
@@ -332,7 +332,7 @@
 			"title": "Shape",
 			"type": "object",
 			"properties": {
-				"--shape": {
+				".shape--{value}": {
 					"title": "Shape",
 					"$ref": "#/definitions/shapes"
 				}
