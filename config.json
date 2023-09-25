@@ -78,7 +78,7 @@
 			]
 		},
 		"shapes": {
-			"title": "Shapes",
+			"title": "Shape",
 			"type": "string",
 			"anyOf": [
 				{
