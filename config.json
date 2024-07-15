@@ -1,6 +1,7 @@
 {
 	"assetBuilderConfig": {
-		"target": "layoutpreview"
+		"target": "layoutpreview",
+		"normalizeFonts": true
 	},
 	"alf": {
 		"hyphenation": {
