@@ -1,0 +1,11 @@
+.special-headline {
+	-ro-pdf-overprint-content: mode1;
+
+	--alf-grid-align-top: baseline;
+	--alf-grid-align-bottom: baseline;
+
+	* {
+		-ro-pdf-overprint-content: mode1;
+	}
+
+}
