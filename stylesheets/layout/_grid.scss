@@ -23,4 +23,8 @@
 		--alf-grid-columns: 20;
 		--alf-grid-column-width: 8.5mm;
 	}
+	&.alf-grid--10 {
+		--alf-grid-columns: 10;
+		--alf-grid-column-width: 17mm;
+	}
 }
