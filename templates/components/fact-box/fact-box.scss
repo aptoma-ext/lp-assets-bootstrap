@@ -8,27 +8,25 @@
 		padding-left: 4mm;
 	}
 
-	.fact-box-header {
+	--alf-hyphenate: 1;
+	--alf-rowify-select: h1, h2, h3, p, li;
+	font-family: Rubik-Regular;
+	font-size: 7pt;
+	line-height: var(--baseline-height);
+	transform: translateY(1.8pt);
+	padding: 2mm;
+
+	p {
+		margin: 0 0 var(--baseline-height) 0;
+	}
+
+	.factbox-header {
 		font-family: Rubik-SemiBold;
 		font-weight: normal;
-		font-size: 12pt;
+		font-size: 10pt;
 		line-height: var(--baseline-height);
 		padding: 2mm;
 		margin: 0;
 		background-color: var(--color-blue-gray);
-	}
-
-	.fact-box-body {
-		--alf-hyphenate: 1;
-		--alf-rowify-select: h1, h2, h3, p, li;
-		font-family: Rubik-Regular;
-		font-size: 9pt;
-		line-height: var(--baseline-height);
-		transform: translateY(1.8pt);
-		padding: 2mm;
-
-		p {
-			margin: 0 0 var(--baseline-height) 0;
-		}
 	}
 }
