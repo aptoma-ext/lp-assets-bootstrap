@@ -1,0 +1,27 @@
+autosize-text:
+  title: Autosize
+  type: object
+  properties:
+    .alf-text-auto-size:
+      title: Enabled
+      type: boolean
+
+    .text-auto-size-lines--{lines}:
+      title: Auto sizing
+      type: string
+      enum:
+        - fixed
+        - "1"
+        - "2"
+        - "3"
+        - "4"
+        - "5"
+        - "6"
+      enumNames:
+        - Off
+        - 1 line
+        - 2 lines
+        - 3 lines
+        - 4 lines
+        - 5 lines
+        - 6 lines

@@ -1,0 +1,39 @@
+text-properties:
+  title: Tekst
+  type: object
+  properties:
+    .text-background--{option}:
+      $ref: "#/definitions/colors"
+      title: Bakgrunnsfarge
+
+    .text-background--bigger:
+      title: Større bakgrunn
+      type: boolean
+
+    .text-color--{color}:
+      $ref: "#/definitions/colors"
+      title: Tekstfarge
+
+    .text-effect--{effect}:
+      title: Effekt
+      type: string
+      enum:
+        - shadow
+        - outline
+      enumNames:
+        - Skygge
+        - Omriss
+
+text-color:
+  title: Tekstfarge
+  type: object
+  properties:
+    .text-color--{color}:
+      title: Color
+      type: string
+      enum:
+        - black
+        - white
+      enumNames:
+        - Black
+        - White

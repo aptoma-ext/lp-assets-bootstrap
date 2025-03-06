@@ -12,6 +12,9 @@
 	line-height: var(--baseline-height);
 	text-rendering: geometricPrecision;
 	-ro-glyph-layout-mode: quality;
+	font-size: 20px;
+
+	// These are here to avoid differences between Firefox and PDFreactor
 	widows: 1;
 	orphans: 1;
 

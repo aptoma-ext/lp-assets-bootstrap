@@ -1,0 +1,7 @@
+picture:
+  title: Picture
+  type: object
+  properties:
+    .alf-is-auto-adjustable:
+      title: Auto size to fit body text
+      type: boolean

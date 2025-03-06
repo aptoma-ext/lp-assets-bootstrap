@@ -1,0 +1,27 @@
+box:
+  title: Box
+  type: object
+  properties:
+    .box--background--{color}:
+      title: Background color
+      type: string
+      enum:
+        - fullytransparent
+        - transparent
+        - white
+        - black
+        - light-gray
+        - yellow
+        - blue
+      enumNames:
+        - Fully Transparent
+        - Transparent
+        - White
+        - Black
+        - Light Gray
+        - Yellow
+        - Blue
+
+    .box--shadow:
+      title: Drop shadow
+      type: boolean

@@ -1,0 +1,8 @@
+@mixin padding {
+	& {
+		padding: calc(var(--padding-top, 0mm) + var(--padding-top--extra, 0mm))
+			calc(var(--padding-right, 0mm) + var(--padding-right--extra, 0mm))
+			calc(var(--padding-bottom, 0mm) + var(--padding-bottom--extra, 0mm))
+			calc(var(--padding-left, 0mm) + var(--padding-left--extra, 0mm));
+	}
+}

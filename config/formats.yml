@@ -1,0 +1,33 @@
+010mm:
+  title: 10mm
+  height: 10
+  units: mm
+030mm:
+  title: 30mm
+  height: 30
+  units: mm
+070mm:
+  title: 70mm
+  height: 70.379
+  units: mm
+090mm:
+  title: 90mm
+  height: 89.994
+  units: mm
+148mm:
+  title: 148mm
+  height: 148.123
+  units: mm
+178mm:
+  title: 178mm
+  height: 177.8
+  units: mm
+263mm:
+  title: 263mm
+  height: 262.997
+  units: mm
+360mm:
+  title: 360mm
+  height: 359.304
+  units: mm
+  isDefault: true

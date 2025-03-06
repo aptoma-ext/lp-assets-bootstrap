@@ -1,0 +1,38 @@
+.divider--border-{alignment}:
+  title: Alignment
+  type: string
+  enum:
+    - middle
+    - top
+    - bottom
+    - left
+    - right
+    - left-right
+    - none
+  enumNames:
+    - Middle
+    - Top
+    - Bottom
+    - Left
+    - Right
+    - Left/right
+    - None
+.u-margin-top--{margin}:
+  title: Margin above
+  type: string
+  enum:
+    - -2-lines
+    - -1-line
+    - 0-lines
+    - 1-line
+    - 2-lines
+    - 3-lines
+    - 4-lines
+  enumNames:
+    - -2 lines
+    - -1 line
+    - None
+    - 1 line
+    - 2 lines
+    - 3 lines
+    - 4 lines
