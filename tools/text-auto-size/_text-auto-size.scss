@@ -1,0 +1,44 @@
+@mixin text-auto-size-options {
+	&.text-auto-size__lines--1 {
+		--text-auto-size__lines: 1;
+		--text-auto-size__disabled: 0;
+	}
+
+	&.text-auto-size__lines--2 {
+		--text-auto-size__lines: 2;
+		--text-auto-size__disabled: 0;
+	}
+
+	&.text-auto-size__lines--3 {
+		--text-auto-size__lines: 3;
+		--text-auto-size__disabled: 0;
+	}
+
+	&.text-auto-size__lines--4 {
+		--text-auto-size__lines: 4;
+		--text-auto-size__disabled: 0;
+	}
+
+	&.text-auto-size__lines--5 {
+		--text-auto-size__lines: 5;
+		--text-auto-size__disabled: 0;
+	}
+
+	&.text-auto-size__lines--6 {
+		--text-auto-size__lines: 6;
+		--text-auto-size__disabled: 0;
+	}
+}
+
+@mixin text-auto-size {
+	& {
+		--alf-text-respect-line-breaks: 0;
+		--alf-text-size-units: pt;
+		--alf-text-size-min: var(--text-auto-size__min, 10);
+		--alf-text-size-max: var(--text-auto-size__max, 600);
+		--alf-text-lines: var(--text-auto-size__lines, 1);
+		--alf-text-auto-size-disabled: var(--text-auto-size__disabled, 1);
+	}
+
+	@include text-auto-size-options;
+}

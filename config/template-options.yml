@@ -1,0 +1,23 @@
+.theme--{theme}:
+  title: Theme
+  type: array
+  uniqueItems: true
+  items:
+    type: string
+    enum:
+      - default
+      - blue
+    enumNames:
+      - Default
+      - Blue
+
+"[data-map]":
+  title: Article types
+  type: array
+  uniqueItems: true
+  items:
+    type: string
+    enum:
+      - article
+    enumNames:
+      - All

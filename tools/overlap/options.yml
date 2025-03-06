@@ -1,0 +1,49 @@
+overlap:
+  title: Overlap
+  type: object
+  properties:
+    .overlap__columns--right--{columns}:
+      title: Right
+      type: string
+      anyOf:
+        - type: string
+          enum: [1]
+          title: 1 column
+        - type: string
+          enum: [2]
+          title: 2 columns
+        - type: string
+          enum: [3]
+          title: 3 columns
+        - type: string
+          enum: [4]
+          title: 4 columns
+        - type: string
+          enum: [5]
+          title: 5 columns
+        - type: string
+          enum: [6]
+          title: 6 columns
+
+    .overlap__columns--left--{columns}:
+      title: Left
+      type: string
+      anyOf:
+        - type: string
+          enum: [1]
+          title: 1 column
+        - type: string
+          enum: [2]
+          title: 2 columns
+        - type: string
+          enum: [3]
+          title: 3 columns
+        - type: string
+          enum: [4]
+          title: 4 columns
+        - type: string
+          enum: [5]
+          title: 5 columns
+        - type: string
+          enum: [6]
+          title: 6 columns

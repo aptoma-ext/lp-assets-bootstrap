@@ -1,0 +1,40 @@
+colors:
+  title: Color
+  type: string
+  anyOf:
+    - type: string
+      enum:
+        - var(--color-white)
+      title: White
+    - type: string
+      enum:
+        - var(--color-black)
+      title: Black
+    - type: string
+      enum:
+        - var(--color-blue-gray)
+      title: Blue gray
+    - type: string
+      enum:
+        - var(--color-blue-light)
+      title: Blue light
+    - type: string
+      enum:
+        - var(--color-olive)
+      title: Olive
+    - type: string
+      enum:
+        - var(--color-atomic-tangerine)
+      title: Atomic tangerine
+    - type: string
+      enum:
+        - var(--color-sepia)
+      title: Sepia
+    - type: string
+      enum:
+        - var(--color-coffee)
+      title: Coffee
+    - type: string
+      enum:
+        - var(--color-flax)
+      title: Flax

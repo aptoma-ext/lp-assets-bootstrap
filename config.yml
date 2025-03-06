@@ -1,0 +1,20 @@
+assetBuilderConfig:
+  target: layoutpreview
+  normalizeFonts: true
+
+alf: !include: ./config/alf.yml
+formats: !include: ./config/formats.yml
+grids: !include: ./config/grids.yml
+colors: !include: ./config/colors.yml
+elementStyleRules: !include: ./config/element-style-rules.yml
+definitions: !include: ./config/definitions.yml
+templateOptions: !include: ./config/template-options.yml
+dividerOptions: !include: ./config/divider-options.yml
+
+componentOptions:
+  !merge:
+    - ./config/component-options.yml
+    - ./tools/box/options.yml
+    - ./tools/margins/options.yml
+    - ./tools/overlap/options.yml
+    - ./tools/padding/options.yml

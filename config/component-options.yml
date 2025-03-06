@@ -1,0 +1,49 @@
+grid-align:
+  title: Grid alignment
+  type: object
+  properties:
+    --alf-grid-align-top:
+      title: Top alignment
+      type: string
+      enum:
+        - top
+        - baseline
+        - none
+      enumNames:
+        - Ascender/top
+        - Baseline
+        - None
+    --alf-grid-align-bottom:
+      title: Bottom alignment
+      type: string
+      enum:
+        - top
+        - baseline
+        - none
+      enumNames:
+        - Ascender/top
+        - Baseline
+        - None
+
+grid-gap:
+  title: Grid gaps
+  type: object
+  properties:
+    --alf-grid-cell-gap-left:
+      title: Left
+      type: string
+      enum:
+        - normal
+        - none
+      enumNames:
+        - Normal
+        - None
+    --alf-grid-cell-gap-right:
+      title: Right
+      type: string
+      enum:
+        - normal
+        - none
+      enumNames:
+        - Normal
+        - None

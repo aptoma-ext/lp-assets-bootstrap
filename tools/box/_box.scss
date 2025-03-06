@@ -1,0 +1,35 @@
+@mixin box {
+	& {
+		background: var(--box-background, transparent);
+		outline: var(--box-outline, none);
+		z-index: var(--box-z-index, unset);
+	}
+
+	@include box-options;
+}
+
+@mixin box-options {
+	&.box--shadow {
+		--box-shadow: var(--color-black) 0 0 1mm;
+		box-shadow: var(--box-shadow, transparent) 0 0 1mm;
+	}
+
+	&.box--background--white {
+		--box-background: var(--color-white);
+	}
+
+	&.box--background--black {
+		--box-background: var(--color-black-99);
+	}
+
+	&.box--background--blue-light {
+		--box-background: var(--color-blue-light);
+	}
+
+	&.box--background--fullytransparent {
+		@media screen {
+			--box-outline: #ffffb9 dashed 2px;
+			--box-background: transparent;
+		}
+	}
+}
