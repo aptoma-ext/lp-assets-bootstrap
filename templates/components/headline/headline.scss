@@ -9,10 +9,9 @@
 		& {
 			--alf-grid-align-top: baseline;
 			--alf-grid-align-bottom: baseline;
-			--alf-text-respect-line-breaks: 0;
-			--alf-text-size-min: 20;
-			--alf-text-size-max: 200;
-			--alf-text-lines: 0;
+			--text-auto-size-min: 20;
+			--text-auto-size-max: 200;
+			--text-auto-size-lines: 0;
 
 			--text-color: var(--color-black);
 			--text-size: 44pt;
