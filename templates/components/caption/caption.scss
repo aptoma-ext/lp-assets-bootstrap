@@ -11,19 +11,23 @@
 
 		p {
 			margin: 0;
-			font-family: Rubik-Regular;
+			font-family: Rubik;
+			font-weight: 400;
 			font-size: 9pt;
 			line-height: var(--baseline-height);
 		}
 
 		.headline {
-			font-family: Rubik-Bold;
+			font-family: Rubik;
+			font-weight: 700;
 			font-size: 9pt;
 		}
 
 		.credit {
 			display: block;
-			font-family: Rubik-Italic;
+			font-family: Rubik;
+			font-weight: 400;
+			font-style: italic;
 			font-size: 8pt;
 		}
 

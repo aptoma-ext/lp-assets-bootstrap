@@ -11,7 +11,8 @@
 			background-color: var(--color-blue-light);
 			--alf-hyphenate: 1;
 			--alf-rowify-select: h1, h2, h3, p, li;
-			font-family: Rubik-Regular;
+			font-family: Rubik;
+			font-weight: 400;
 			font-size: 7pt;
 			line-height: var(--baseline-height);
 			transform: translateY(1.8pt);
@@ -27,8 +28,8 @@
 		}
 
 		.factbox-header {
-			font-family: Rubik-SemiBold;
-			font-weight: normal;
+			font-family: Rubik;
+			font-weight: 700;
 			font-size: 10pt;
 			line-height: var(--baseline-height);
 			padding: 2mm;
