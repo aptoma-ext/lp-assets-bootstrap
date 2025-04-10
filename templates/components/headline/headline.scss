@@ -4,6 +4,7 @@
 	.alf-component.headline {
 		@include tools.margin;
 		@include tools.text-properties(h1);
+		@include tools.text-auto-size;
 
 		& {
 			--alf-grid-align-top: baseline;
