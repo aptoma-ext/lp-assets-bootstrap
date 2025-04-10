@@ -1,0 +1,9 @@
+- description: Wrap text before colon in a span with class before-colon
+  targetElements:
+    - .plugin-leadin
+  elementClassNames:
+    - has-colon
+  textPattern: ^([^:]+:)
+  groupTransformations:
+    - classNames:
+        - before-colon
