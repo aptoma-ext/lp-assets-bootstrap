@@ -23,20 +23,20 @@
 
 	@for $i from -5 through 10 {
 		&.margin-top-lines--#{$i} {
-			--margin-top: calc((var(--baseline) * #{$i}));
+			--margin-top: calc((var(--baseline-height) * #{$i}));
 		}
 
 		&.margin-bottom-lines--#{$i} {
-			--margin-bottom: calc((var(--baseline) * #{$i}));
+			--margin-bottom: calc((var(--baseline-height) * #{$i}));
 		}
 	}
 
 	&.margin-top-lines-half {
-		--margin-top: calc((var(--baseline) / 2));
+		--margin-top: calc((var(--baseline-height) / 2));
 	}
 
 	&.margin-bottom-lines-half {
-		--margin-bottom: calc((var(--baseline) / 2));
+		--margin-bottom: calc((var(--baseline-height) / 2));
 	}
 }
 
