@@ -19,17 +19,22 @@
 	}
 
 	&.box--background--black {
-		--box-background: var(--color-black-99);
+		--box-background: var(--color-black);
+	}
+
+	&.box--background--blue-gray {
+		--box-background: var(--color-blue-gray);
 	}
 
 	&.box--background--blue-light {
 		--box-background: var(--color-blue-light);
 	}
 
-	&.box--background--fullytransparent {
-		@media screen {
-			--box-outline: #ffffb9 dashed 2px;
-			--box-background: transparent;
-		}
+	&.box--background--olive {
+		--box-background: var(--color-olive);
+	}
+
+	&.box--background--flax {
+		--box-background: var(--color-flax);
 	}
 }

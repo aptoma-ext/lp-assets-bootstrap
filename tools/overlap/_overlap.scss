@@ -2,14 +2,14 @@
 	@for $i from 1 through $columns {
 		$column: $i * $resolution;
 
-		&.overlap__columns--right--#{$i} {
+		&.overlap-columns--right--#{$i} {
 			margin-right: calc(
 				(var(--alf-grid-column-width) * -#{$column}) +
 				(var(--alf-grid-column-gap) * -#{$column - 1})
 			);
 		}
 
-		&.overlap__columns--left--#{$i} {
+		&.overlap-columns--left--#{$i} {
 			margin-left: calc(
 				(var(--alf-grid-column-width) * -#{$column}) +
 				(var(--alf-grid-column-gap) * -#{$column - 1})

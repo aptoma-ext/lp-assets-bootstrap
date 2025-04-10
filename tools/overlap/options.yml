@@ -2,7 +2,7 @@ overlap:
   title: Overlap
   type: object
   properties:
-    .overlap__columns--right--{columns}:
+    .overlap-columns--right--{columns}:
       title: Right
       type: string
       anyOf:
@@ -25,7 +25,7 @@ overlap:
           enum: [6]
           title: 6 columns
 
-    .overlap__columns--left--{columns}:
+    .overlap-columns--left--{columns}:
       title: Left
       type: string
       anyOf:

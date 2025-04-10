@@ -6,21 +6,19 @@ box:
       title: Background color
       type: string
       enum:
-        - fullytransparent
-        - transparent
         - white
         - black
-        - light-gray
-        - yellow
-        - blue
+        - blue-gray
+        - blue-light
+        - olive
+        - flax
       enumNames:
-        - Fully Transparent
-        - Transparent
         - White
         - Black
+        - Blue Gray
         - Light Gray
-        - Yellow
-        - Blue
+        - Olive
+        - Flax
 
     .box--shadow:
       title: Drop shadow

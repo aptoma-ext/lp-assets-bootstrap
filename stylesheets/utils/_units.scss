@@ -1,7 +1,9 @@
-& {
-	--unit-thin: 0.25pt;
+@mixin styles {
+	& {
+		--unit-thin: 0.25pt;
 
-	@media screen {
-		--unit-thin: 1px;
+		@media screen {
+			--unit-thin: 1px;
+		}
 	}
 }

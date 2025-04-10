@@ -1,1 +1,5 @@
-@import "./themes/base/styles";
+@use "./themes/base";
+
+@mixin styles {
+	@include base.styles;
+}

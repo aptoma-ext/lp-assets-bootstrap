@@ -1,9 +1,8 @@
 @use "../../stylesheets/utils/mixins";
-@use "../../stylesheets/utils/fonts";
 
 @mixin text-properties-options($selector: "p") {
 	&.text-effect--shadow #{$selector} {
-		--text-effect-shadow: var(--color-black-99) 0 0 0.1em;
+		--text-effect-shadow: var(--color-black) 0 0 0.1em;
 		text-shadow: var(--text-effect-shadow);
 	}
 
@@ -11,11 +10,10 @@
 		@include mixins.outline(var(--text-effect-outline-color, var(--color-black)), 1pt);
 	}
 
-	&.text-background--black-99 {
-		--text-bg-color: var(--color-black-99);
+	&.text-background--black {
+		--text-bg-color: var(--color-black);
 		--text-color-default: var(--color-white);
-		--text-outline-color: var(--color-black-99);
-		--text-bold-color: var(--color-vg-gul);
+		--text-outline-color: var(--color-black);
 		--text-padding: 1.5mm 0 1.5mm 1.5mm;
 	}
 
@@ -27,95 +25,13 @@
 		--text-padding: 1.5mm 0 1.5mm 1.5mm;
 	}
 
-	&.text-background--vg-sport-1 {
-		--text-bg-color: var(--color-vg-sport-1);
-		--text-color-default: var(--color-white);
-		--text-outline-color: var(--color-vg-sport-1);
-		--text-bold-color: var(--color-vg-sport-1);
-		--text-padding: 1.5mm 0 1.5mm 1.5mm;
-	}
-
-	&.text-background--vg-sport-2 {
-		--text-bg-color: var(--color-vg-sport-2);
-		--text-color-default: var(--color-white);
-		--text-outline-color: var(--color-vg-sport-2);
-		--text-bold-color: var(--color-vg-sport-2);
-		--text-padding: 1.5mm 0 1.5mm 1.5mm;
-	}
-
-	&.text-background--vg-rod {
-		--text-bg-color: var(--color-vg-rod);
-		--text-color-default: var(--color-white);
-		--text-outline-color: var(--color-vg-rod);
-		--text-bold-color: var(--color-vg-rod);
-		--text-padding: 1.5mm 0 1.5mm 1.5mm;
-	}
-
-	&.text-background--vg-gul {
-		--text-bg-color: var(--color-vg-gul);
-		--text-color-default: var(--color-white);
-		--text-outline-color: var(--color-vg-gul);
-		--text-bold-color: var(--color-vg-gul);
-		--text-padding: 1.5mm 0 1.5mm 1.5mm;
-	}
-
-	&.text-background--vg-bla {
-		--text-bg-color: var(--color-vg-bla);
-		--text-color-default: var(--color-white);
-		--text-outline-color: var(--color-white);
-		--text-bold-color: var(--color-vg-gul);
-		--text-padding: 1.5mm 0 1.5mm 1.5mm;
-	}
-
-	&.text-background--gray77 {
-		--text-bg-color: var(--color-c0-m0-y0-k77);
-		--text-color-default: var(--color-white);
-		--text-outline-color: var(--color-white);
-		--text-bold-color: var(--color-vg-gul);
-		--text-padding: 1.5mm 0 1.5mm 1.5mm;
-	}
-
-	&.text-background--bigger {
-		--text-bg-extra-bottom: 0.12em;
-	}
-
 	&.text-color--white {
 		--text-color: var(--color-white);
-		--text-outline-color: var(--color-black-99);
+		--text-outline-color: var(--color-black);
 	}
 
-	&.text-color--black-99 {
-		--text-color: var(--color-black-99);
-		--text-outline-color: var(--color-white);
-	}
-
-	&.text-color--vg-rod {
-		--text-color: var(--color-vg-rod);
-		--text-outline-color: var(--color-white);
-	}
-
-	&.text-color--vg-gul {
-		--text-color: var(--color-vg-gul);
-		--text-outline-color: var(--color-white);
-	}
-
-	&.text-color--vg-bla {
-		--text-color: var(--color-vg-bla);
-		--text-outline-color: var(--color-white);
-	}
-
-	&.text-color--gray77 {
-		--text-color: var(--color-c0-m0-y0-k77);
-		--text-outline-color: var(--color-white);
-	}
-
-	&.text-color--vg-sport-1 {
-		--text-color: var(--color-vg-sport-1);
-		--text-outline-color: var(--color-white);
-	}
-
-	&.text-color--vg-sport-2 {
-		--text-color: var(--color-vg-sport-2);
+	&.text-color--black {
+		--text-color: var(--color-black);
 		--text-outline-color: var(--color-white);
 	}
 
@@ -146,49 +62,14 @@
 	&.text-transform--remove-all-letter-case {
 		--text-text-transform: none;
 	}
-
-	&.text-font-family--druk {
-		@include fonts.apply-font-metrics("Druk");
-
-		& {
-			--text-font-family: Druk;
-		}
-	}
-
-	&.text-font-family--druk-cond {
-		@include fonts.apply-font-metrics("DrukCond");
-
-		& {
-			--text-font-family: DrukCond;
-		}
-	}
-
-	&.text-font-family--druk-text {
-		@include fonts.apply-font-metrics("DrukText");
-
-		& {
-			--text-font-family: DrukText;
-		}
-	}
-
-	&.text-font-family--druk-text-wide {
-		@include fonts.apply-font-metrics("DrukTextWide");
-
-		& {
-			--text-font-family: DrukTextWide;
-			--text-font-weight: 1000;
-		}
-	}
 }
 
 @mixin text-properties($selector: "p") {
-	@include fonts.apply-font-metrics("Druk");
-
 	& {
 		--alf-grid-align-top: baseline;
 		--alf-grid-align-bottom: none;
 
-		--text-font-family: Druk;
+		--text-font-family: PlayfairDisplay;
 		--text-font-weight: 500;
 		--text-font-size: 120pt;
 		--text-font-style: normal;
@@ -196,9 +77,7 @@
 		--text-color-default: var(--color-black);
 		--text-text-transform: uppercase;
 		--text-padding: 0;
-
 		--alf-rowify-select: h1, h2 p;
-
 		--text-font: var(--text-font-style) var(--text-font-weight) var(--text-font-size) / var(--text-line-height) var(--text-font-family);
 	}
 
@@ -208,8 +87,6 @@
 		text-transform: var(--text-text-transform, none);
 		padding: var(--text-padding);
 		text-align: var(--text-text-align, left);
-
-		@include fonts.baseline-adjust($line-height: var(--text-line-height));
 
 		.row {
 			position: relative;

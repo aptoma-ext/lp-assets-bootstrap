@@ -1,12 +1,21 @@
-.box {
-	--box-background-color: transparent;
-	--alf-grid-align-top: baseline;
-	--alf-grid-align-bottom: baseline;
-	min-height: var(--baseline-height);
-	background-color: var(--box-background-color);
+@use "../tools";
 
-	&.alf-is-auto-adjustable {
-		min-height: 0;
-		margin-bottom: 0;
+@mixin component {
+	.alf-component.box {
+		@include tools.margin;
+		@include tools.box;
+
+		& {
+			--box-default-height: calc(var(--baseline-height) * 5);
+			--alf-grid-align-top: none;
+			--alf-grid-align-bottom: none;
+			height: var(--box-default-height);
+			min-height: var(--box-default-height);
+		}
+
+		@media screen {
+			--box-outline: #ffffb9 dashed 2px;
+			--box-background: #ffffb9;
+		}
 	}
 }

@@ -3,7 +3,7 @@ margins:
   type: object
   properties:
 
-    .margin--top-lines--{lines}:
+    .margin-top-lines--{lines}:
       title: Above
       type: string
       anyOf:
@@ -37,7 +37,7 @@ margins:
     #   title: Above (extra)
     #   type: string
 
-    .margin--bottom-lines--{lines}:
+    .margin-bottom-lines--{lines}:
       title: Below
       type: string
       anyOf:
@@ -67,6 +67,6 @@ margins:
           enum: [4]
 
     # Enable if writing a specific value is needed
-    # --margin--bottom--extra:
+    # --margin-bottom--extra:
     #   title: Below (extra)
     #   type: string

@@ -1,26 +1,34 @@
-.alf-component.caption {
-	box-sizing: border-box;
-	--alf-hyphenate: 1;
+@use "../tools";
 
-	p {
-		margin: 0;
-		font-family: Rubik-Regular;
-		font-size: 9pt;
-		line-height: var(--baseline-height);
-	}
+@mixin component {
+	.alf-component.caption {
+		@include tools.margin;
 
-	.headline {
-		font-family: Rubik-Bold;
-		font-size: 9pt;
-	}
+		& {
+			box-sizing: border-box;
+			--alf-hyphenate: 1;
+		}
 
-	.credit {
-		display: block;
-		font-family: Rubik-Italic;
-		font-size: 8pt;
-	}
+		p {
+			margin: 0;
+			font-family: Rubik-Regular;
+			font-size: 9pt;
+			line-height: var(--baseline-height);
+		}
 
-	&[grid-inside] {
-		padding: 2mm;
+		.headline {
+			font-family: Rubik-Bold;
+			font-size: 9pt;
+		}
+
+		.credit {
+			display: block;
+			font-family: Rubik-Italic;
+			font-size: 8pt;
+		}
+
+		&[grid-inside] {
+			padding: 2mm;
+		}
 	}
 }

@@ -1,9 +1,15 @@
-.picture {
-	.alf-image {
-		image-orientation: none;
-	}
+@use "../tools";
 
-	figure {
-		margin: 0;
+@mixin component {
+	.alf-component.picture {
+		@include tools.margin;
+
+		.alf-image {
+			image-orientation: none;
+		}
+
+		figure {
+			margin: 0;
+		}
 	}
 }

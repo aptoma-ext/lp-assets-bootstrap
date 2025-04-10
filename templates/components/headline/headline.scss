@@ -1,37 +1,25 @@
-.headline {
-	-ro-pdf-overprint-content: mode1;
+@use "../tools";
 
-	--alf-grid-align-top: baseline;
-	--alf-grid-align-bottom: baseline;
-	--alf-text-respect-line-breaks: 0;
-	--alf-text-size-units: px;
-	--alf-text-size-min: 40;
-	--alf-text-size-max: 160;
-	--alf-text-lines: 0;
+@mixin component {
+	.alf-component.headline {
+		@include tools.margin;
+		@include tools.text-auto-size;
+		@include tools.text-properties(h1);
 
-	--headline-color: var(--color-black);
-	--headline-size: 44pt;
-	--headline-line-height: 1.01;
-	--headline-font-family: PlayfairDisplay-SemiBold;
-	--headline-letter-spacing: -0.02em;
+		& {
+			--alf-grid-align-top: baseline;
+			--alf-grid-align-bottom: baseline;
+			--alf-text-respect-line-breaks: 0;
+			--alf-text-size-min: 20;
+			--alf-text-size-max: 200;
+			--alf-text-lines: 0;
 
-	* {
-		-ro-pdf-overprint-content: mode1;
-	}
-
-	&.alf-text-auto-size {
-		// Setting the font size to the average of min/max so it can grow/shrink
-		// This will make sure the headline can always be automatically adjusted up or down
-		font-size: calc(((var(--alf-text-size-min) + var(--alf-text-size-max)) / 2) * 1px);
-	}
-
-	h1 {
-		margin: 0;
-		font-weight: normal;
-		color: var(--headline-color);
-		font-size: var(--headline-size);
-		line-height: var(--headline-line-height);
-		font-family: var(--headline-font-family);
-		letter-spacing: var(--headline-letter-spacing);
+			--text-color: var(--color-black);
+			--text-size: 44pt;
+			--text-line-height: 1.01;
+			--text-font-family: PlayfairDisplay;
+			--text-font-weight: 600;
+			--text-letter-spacing: -0.02em;
+		}
 	}
 }

@@ -1,65 +1,67 @@
-@at-root {
-	@font-face {
-		font-family: Lora-Medium;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Medium.otf);
-		-ro-font-embedding-type: all;
-	}
+@mixin font-face {
+	@at-root {
+		@font-face {
+			font-family: Lora;
+			font-style: normal;
+			font-weight: 500;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Medium.otf);
+			-ro-font-embedding-type: all;
+		}
 
-	@font-face {
-		font-family: Lora-SemiBoldItalic;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-SemiBoldItalic.otf);
-		-ro-font-embedding-type: all;
-	}
+		@font-face {
+			font-family: Lora;
+			font-style: italic;
+			font-weight: 600;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-SemiBoldItalic.otf);
+			-ro-font-embedding-type: all;
+		}
 
-	@font-face {
-		font-family: Lora-Regular;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Regular.otf);
-		-ro-font-embedding-type: all;
-	}
+		@font-face {
+			font-family: Lora;
+			font-style: normal;
+			font-weight: 400;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Regular.otf);
+			-ro-font-embedding-type: all;
+		}
 
-	@font-face {
-		font-family: Lora-BoldItalic;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-BoldItalic.otf);
-		-ro-font-embedding-type: all;
-	}
+		@font-face {
+			font-family: Lora;
+			font-style: italic;
+			font-weight: 700;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-BoldItalic.otf);
+			-ro-font-embedding-type: all;
+		}
 
-	@font-face {
-		font-family: Lora-SemiBold;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-SemiBold.otf);
-		-ro-font-embedding-type: all;
-	}
+		@font-face {
+			font-family: Lora;
+			font-style: normal;
+			font-weight: 600;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-SemiBold.otf);
+			-ro-font-embedding-type: all;
+		}
 
-	@font-face {
-		font-family: Lora-Bold;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Bold.otf);
-		-ro-font-embedding-type: all;
-	}
+		@font-face {
+			font-family: Lora;
+			font-style: normal;
+			font-weight: 700;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Bold.otf);
+			-ro-font-embedding-type: all;
+		}
 
-	@font-face {
-		font-family: Lora-MediumItalic;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-MediumItalic.otf);
-		-ro-font-embedding-type: all;
-	}
+		@font-face {
+			font-family: Lora;
+			font-style: italic;
+			font-weight: 500;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-MediumItalic.otf);
+			-ro-font-embedding-type: all;
+		}
 
-	@font-face {
-		font-family: Lora-Italic;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Italic.otf);
-		-ro-font-embedding-type: all;
+		@font-face {
+			font-family: Lora;
+			font-style: italic;
+			font-weight: 400;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Lora/Lora-Italic.otf);
+			-ro-font-embedding-type: all;
+		}
 	}
 }

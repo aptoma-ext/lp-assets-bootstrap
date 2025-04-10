@@ -1,3 +1,8 @@
+@use "./utils";
+@use "./layout";
+@use "./themes";
+@use "./components";
+
 .alf-layout {
 	// Recommended to have these feature flags enabled (https://docs.aptoma.com/dredition/setup-print/layoutpreview-setup/css-for-print-design#feature-flags)
 	--alf-align-bottom-enabled: 1;
@@ -18,8 +23,8 @@
 	widows: 1;
 	orphans: 1;
 
-	@import "_utils";
-	@import "_layout";
-	@import "components";
-	@import "themes";
+	@include themes.styles;
+	@include utils.styles;
+	@include layout.styles;
+	@include components.styles;
 }
