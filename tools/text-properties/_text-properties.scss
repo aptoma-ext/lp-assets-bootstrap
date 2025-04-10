@@ -75,7 +75,7 @@
 		--text-font-style: normal;
 		--text-line-height: 0.81;
 		--text-color-default: var(--color-black);
-		--text-text-transform: uppercase;
+		--text-text-transform: none;
 		--text-padding: 0;
 		--alf-rowify-select: h1, h2 p;
 		--text-font: var(--text-font-style) var(--text-font-weight) var(--text-font-size) / var(--text-line-height) var(--text-font-family);
@@ -86,6 +86,7 @@
 		color: var(--text-color, var(--text-color-default));
 		text-transform: var(--text-text-transform, none);
 		padding: var(--text-padding);
+		margin: 0;
 		text-align: var(--text-text-align, left);
 
 		.row {

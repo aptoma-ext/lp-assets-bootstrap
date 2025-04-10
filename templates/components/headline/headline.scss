@@ -3,7 +3,6 @@
 @mixin component {
 	.alf-component.headline {
 		@include tools.margin;
-		@include tools.text-auto-size;
 		@include tools.text-properties(h1);
 
 		& {
