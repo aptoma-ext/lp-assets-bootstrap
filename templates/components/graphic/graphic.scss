@@ -1,0 +1,31 @@
+@use "../tools";
+
+@mixin component {
+	.alf-component.graphic {
+		@include tools.margin;
+
+		& {
+			display: flex;
+			justify-content: center;
+			--alf-grid-align-top: top;
+			--alf-grid-cell-expand: 48;
+		}
+
+		.graphic--image-container {
+			display: inline-block;
+		}
+
+		&.graphic--no-expand {
+			--alf-grid-cell-expand: 0;
+
+			.graphic--image-container {
+				width: 100%;
+
+				img {
+					width: 100%;
+					height: auto;
+				}
+			}
+		}
+	}
+}

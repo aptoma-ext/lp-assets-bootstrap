@@ -1,9 +1,23 @@
-@import "../templates/components/box/box";
-@import "../templates/components/byline/byline";
-@import "../templates/components/caption/caption";
-@import "../templates/components/fact-box/fact-box";
-@import "../templates/components/headline/headline";
-@import "../templates/components/intro/intro";
-@import "../templates/components/picture/picture";
-@import "../templates/components/quote/quote";
-@import "../templates/components/text-column/text-column";
+@use "../templates/components/box/box";
+@use "../templates/components/byline/byline";
+@use "../templates/components/caption/caption";
+@use "../templates/components/fact-box/fact-box";
+@use "../templates/components/graphic/graphic";
+@use "../templates/components/headline/headline";
+@use "../templates/components/intro/intro";
+@use "../templates/components/picture/picture";
+@use "../templates/components/quote/quote";
+@use "../templates/components/text-column/text-column";
+
+@mixin styles {
+	@include box.component;
+	@include byline.component;
+	@include caption.component;
+	@include fact-box.component;
+	@include graphic.component;
+	@include headline.component;
+	@include intro.component;
+	@include picture.component;
+	@include quote.component;
+	@include text-column.component;
+}

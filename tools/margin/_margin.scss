@@ -1,0 +1,52 @@
+@mixin margin-options {
+	& {
+		--margin-top: 0mm;
+		--margin-top--extra: 0mm;
+		--margin-right: 0mm;
+		--margin-right--extra: 0mm;
+		--margin-bottom: 0mm;
+		--margin-bottom--extra: 0mm;
+		--margin-left: 0mm;
+		--margin-left--extra: 0mm;
+	}
+
+	&.margin-none {
+		--margin-top: 0mm;
+		--margin-top--extra: 0mm;
+		--margin-right: 0mm;
+		--margin-right--extra: 0mm;
+		--margin-bottom: 0mm;
+		--margin-bottom--extra: 0mm;
+		--margin-left: 0mm;
+		--margin-left--extra: 0mm;
+	}
+
+	@for $i from -5 through 10 {
+		&.margin-top-lines--#{$i} {
+			--margin-top: calc((var(--baseline-height) * #{$i}));
+		}
+
+		&.margin-bottom-lines--#{$i} {
+			--margin-bottom: calc((var(--baseline-height) * #{$i}));
+		}
+	}
+
+	&.margin-top-lines-half {
+		--margin-top: calc((var(--baseline-height) / 2));
+	}
+
+	&.margin-bottom-lines-half {
+		--margin-bottom: calc((var(--baseline-height) / 2));
+	}
+}
+
+@mixin margin {
+	& {
+		margin: calc(var(--margin-top, 0mm) + var(--margin-top--extra, 0mm))
+			calc(var(--margin-right, 0mm) + var(--margin-right--extra, 0mm))
+			calc(var(--margin-bottom, 0mm) + var(--margin-bottom--extra, 0mm))
+			calc(var(--margin-left, 0mm) + var(--margin-left--extra, 0mm));
+	}
+
+	@include margin-options;
+}

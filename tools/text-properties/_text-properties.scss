@@ -1,0 +1,110 @@
+@use "../../stylesheets/utils/mixins";
+
+@mixin text-properties-options($selector: "p") {
+	&.text-effect--shadow #{$selector} {
+		--text-effect-shadow: var(--color-black) 0 0 0.1em;
+		text-shadow: var(--text-effect-shadow);
+	}
+
+	&.text-effect--outline {
+		@include mixins.outline(var(--text-effect-outline-color, var(--color-black)), 1pt);
+	}
+
+	&.text-background--black {
+		--text-bg-color: var(--color-black);
+		--text-color-default: var(--color-white);
+		--text-outline-color: var(--color-black);
+		--text-padding: 1.5mm 0 1.5mm 1.5mm;
+	}
+
+	&.text-background--white {
+		--text-bg-color: var(--color-white);
+		--text-color-default: var(--color-black);
+		--text-outline-color: var(--color-white);
+		--text-bold-color: var(--color-vg-gul);
+		--text-padding: 1.5mm 0 1.5mm 1.5mm;
+	}
+
+	&.text-color--white {
+		--text-color: var(--color-white);
+		--text-outline-color: var(--color-black);
+	}
+
+	&.text-color--black {
+		--text-color: var(--color-black);
+		--text-outline-color: var(--color-white);
+	}
+
+	&.text-alignment--left {
+		--text-text-align: left;
+	}
+
+	&.text-alignment--center {
+		--text-text-align: center;
+	}
+
+	&.text-alignment--right {
+		--text-text-align: right;
+	}
+
+	&.text-transform--lowercase {
+		--text-text-transform: lowercase;
+	}
+
+	&.text-transform--uppercase {
+		--text-text-transform: uppercase;
+	}
+
+	&.text-transform--capitalize {
+		--text-text-transform: capitalize;
+	}
+
+	&.text-transform--remove-all-letter-case {
+		--text-text-transform: none;
+	}
+}
+
+@mixin text-properties($selector: "p") {
+	& {
+		--alf-grid-align-top: baseline;
+		--alf-grid-align-bottom: none;
+
+		--text-font-family: PlayfairDisplay;
+		--text-font-weight: 500;
+		--text-font-size: 120pt;
+		--text-font-style: normal;
+		--text-line-height: 0.81;
+		--text-color-default: var(--color-black);
+		--text-text-transform: none;
+		--text-padding: 0;
+		--alf-rowify-select: h1, h2 p;
+		--text-font: var(--text-font-style) var(--text-font-weight) var(--text-font-size) / var(--text-line-height) var(--text-font-family);
+	}
+
+	#{$selector} {
+		font: var(--text-font);
+		color: var(--text-color, var(--text-color-default));
+		text-transform: var(--text-text-transform, none);
+		padding: var(--text-padding);
+		margin: 0;
+		text-align: var(--text-text-align, left);
+
+		.row {
+			position: relative;
+
+			&::before {
+				content: "";
+				display: block;
+				position: absolute;
+				top: calc(var(--alf-text-top, 0) + 0.02em - var(--text-bg-extra-top, 0mm));
+				height: calc(0.84em + var(--text-bg-extra-top, 0mm) + var(--text-bg-extra-bottom, 0mm));
+				width: calc(var(--alf-text-width) + 0.2em + var(--text-bg-extra-left, 0mm) + var(--text-bg-extra-right, 0mm));
+				left: calc(var(--alf-text-left) - 0.1em - var(--text-bg-extra-left, 0mm));
+				background-color: var(--text-bg-color, transparent);
+				z-index: -1;
+			}
+		}
+	}
+
+	@include text-properties-options($selector);
+}

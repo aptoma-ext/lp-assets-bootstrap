@@ -1,9 +1,11 @@
-@at-root {
-	@font-face {
-		font-family: PlayfairDisplay-SemiBold;
-		font-style: normal;
-		font-weight: normal;
-		src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Playfair_Display/PlayfairDisplay-SemiBold.otf);
-		-ro-font-embedding-type: all;
+@mixin font-face {
+	@at-root {
+		@font-face {
+			font-family: PlayfairDisplay;
+			font-style: normal;
+			font-weight: 600;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Playfair_Display/PlayfairDisplay-SemiBold.otf);
+			-ro-font-embedding-type: all;
+		}
 	}
 }

@@ -1,0 +1,72 @@
+margins:
+  title: Margins
+  type: object
+  properties:
+
+    .margin-top-lines--{lines}:
+      title: Above
+      type: string
+      anyOf:
+        - type: string
+          title: -2 lines
+          enum: [-2]
+        - type: string
+          title: -1 lines
+          enum: [-1]
+        - type: string
+          title: None
+          enum: [0]
+        - type: string
+          title: Half
+          enum: [half]
+        - type: string
+          title: 1 line
+          enum: [1]
+        - type: string
+          title: 2 lines
+          enum: [2]
+        - type: string
+          title: 3 lines
+          enum: [3]
+        - type: string
+          title: 4 lines
+          enum: [4]
+
+    # Enable if writing a specific value is needed
+    # --margin-top-extra:
+    #   title: Above (extra)
+    #   type: string
+
+    .margin-bottom-lines--{lines}:
+      title: Below
+      type: string
+      anyOf:
+        - type: string
+          title: -2 lines
+          enum: [-2]
+        - type: string
+          title: -1 lines
+          enum: [-1]
+        - type: string
+          title: None
+          enum: [0]
+        - type: string
+          title: Half
+          enum: [half]
+        - type: string
+          title: 1 line
+          enum: [1]
+        - type: string
+          title: 2 lines
+          enum: [2]
+        - type: string
+          title: 3 lines
+          enum: [3]
+        - type: string
+          title: 4 lines
+          enum: [4]
+
+    # Enable if writing a specific value is needed
+    # --margin-bottom--extra:
+    #   title: Below (extra)
+    #   type: string

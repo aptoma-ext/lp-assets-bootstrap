@@ -1,0 +1,5 @@
+hyphenation:
+  exceptions:
+    # Exceptions override the hyphenation rules and forces a word to be hyphenated like it's defined here:
+    # - news-paper
+    # - weekend-paper

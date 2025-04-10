@@ -1,0 +1,49 @@
+@mixin text-auto-size-options {
+	&.text-auto-size-lines--auto {
+		--text-auto-size-lines: 0;
+		--text-auto-size-disabled: 0;
+	}
+
+	&.text-auto-size-lines--1 {
+		--text-auto-size-lines: 1;
+		--text-auto-size-disabled: 0;
+	}
+
+	&.text-auto-size-lines--2 {
+		--text-auto-size-lines: 2;
+		--text-auto-size-disabled: 0;
+	}
+
+	&.text-auto-size-lines--3 {
+		--text-auto-size-lines: 3;
+		--text-auto-size-disabled: 0;
+	}
+
+	&.text-auto-size-lines--4 {
+		--text-auto-size-lines: 4;
+		--text-auto-size-disabled: 0;
+	}
+
+	&.text-auto-size-lines--5 {
+		--text-auto-size-lines: 5;
+		--text-auto-size-disabled: 0;
+	}
+
+	&.text-auto-size-lines--6 {
+		--text-auto-size-lines: 6;
+		--text-auto-size-disabled: 0;
+	}
+}
+
+@mixin text-auto-size {
+	& {
+		--alf-text-respect-line-breaks: 0;
+		--alf-text-size-units: pt;
+		--alf-text-size-min: var(--text-auto-size-min, 10);
+		--alf-text-size-max: var(--text-auto-size-max, 600);
+		--alf-text-lines: var(--text-auto-size-lines, 1);
+		--alf-text-auto-size-disabled: var(--text-auto-size-disabled, 1);
+	}
+
+	@include text-auto-size-options;
+}

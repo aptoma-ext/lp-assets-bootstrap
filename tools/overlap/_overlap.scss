@@ -1,0 +1,19 @@
+@mixin overlap($columns: 6, $resolution: 5) {
+	@for $i from 1 through $columns {
+		$column: $i * $resolution;
+
+		&.overlap-columns--right--#{$i} {
+			margin-right: calc(
+				(var(--alf-grid-column-width) * -#{$column}) +
+				(var(--alf-grid-column-gap) * -#{$column - 1})
+			);
+		}
+
+		&.overlap-columns--left--#{$i} {
+			margin-left: calc(
+				(var(--alf-grid-column-width) * -#{$column}) +
+				(var(--alf-grid-column-gap) * -#{$column - 1})
+			);
+		}
+	}
+}

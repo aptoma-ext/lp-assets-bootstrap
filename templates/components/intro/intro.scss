@@ -1,18 +1,24 @@
-.intro {
-	font-family: Rubik-Light;
-	font-weight: normal;
-	font-size: 17pt;
-	line-height: 1.1em;
-	-ro-pdf-overprint: mode1;
-	-ro-pdf-overprint-content: mode1;
-	margin-bottom: var(--top-line-offset);
-	--alf-grid-align-top: top;
-	--alf-grid-align-bottom: baseline;
-	--alf-hyphens-after-first: 5;
-	--alf-hyphens-before-last: 5;
-	--alf-hyphenate: 1;
+@use "../tools";
 
-	p {
-		margin: 0;
+@mixin component {
+	.alf-component.intro {
+		@include tools.margin;
+
+		& {
+			font-family: Rubik;
+			font-weight: 300;
+			font-size: 17pt;
+			line-height: 1.1em;
+			--margin-bottom: var(--top-line-offset);
+			--alf-grid-align-top: top;
+			--alf-grid-align-bottom: baseline;
+			--alf-hyphens-after-first: 5;
+			--alf-hyphens-before-last: 5;
+			--alf-hyphenate: 1;
+		}
+
+		p {
+			margin: 0;
+		}
 	}
 }

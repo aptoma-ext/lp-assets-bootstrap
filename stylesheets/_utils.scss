@@ -1,4 +1,8 @@
-@import "./utils/mixins";
-@import "./utils/dividers";
-@import "./utils/margin";
-@import "./utils/units";
+@use "./utils/mixins";
+@use "./utils/dividers";
+@use "./utils/units";
+
+@mixin styles {
+	@include dividers.styles;
+	@include units.styles;
+}

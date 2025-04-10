@@ -1,0 +1,14 @@
+@use "./fonts/lora";
+@use "./fonts/noticia-text";
+@use "./fonts/playfair-display";
+@use "./fonts/rubik";
+@use "./colors";
+
+@mixin styles {
+	@include lora.font-face;
+	@include noticia-text.font-face;
+	@include playfair-display.font-face;
+	@include rubik.font-face;
+
+	@include colors.styles;
+}

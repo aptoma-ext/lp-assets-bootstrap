@@ -1,0 +1,16 @@
+padding:
+  title: Padding
+  type: object
+  properties:
+    --padding-left:
+      title: Padding left
+      type: string
+    --padding-right:
+      title: Padding right
+      type: string
+    --padding-top:
+      title: Padding top
+      type: string
+    --padding-bottom:
+      title: Padding bottom
+      type: string

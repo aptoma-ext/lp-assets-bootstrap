@@ -1,1 +1,5 @@
-@import "./layout/_grid";
+@use "./layout/_grid";
+
+@mixin styles {
+	@include grid.styles;
+}

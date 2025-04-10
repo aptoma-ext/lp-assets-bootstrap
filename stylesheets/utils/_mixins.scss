@@ -25,3 +25,19 @@
 
 	@return $value;
 }
+
+@mixin outline($color, $width) {
+	text-shadow: $color $width 0 0,
+		$color #{math.cos(0.5) * $width} #{math.sin(0.5) * $width} 0,
+		$color #{math.cos(1) * $width} #{math.sin(1) * $width} 0,
+		$color #{math.cos(1.5) * $width} #{math.sin(1.5) * $width} 0,
+		$color #{math.cos(2) * $width} #{math.sin(2) * $width} 0,
+		$color #{math.cos(2.5) * $width} #{math.sin(2.5) * $width} 0,
+		$color #{math.cos(3) * $width} #{math.sin(3) * $width} 0,
+		$color #{math.cos(3.5) * $width} #{math.sin(3.5) * $width} 0,
+		$color #{math.cos(4) * $width} #{math.sin(4) * $width} 0,
+		$color #{math.cos(4.5) * $width} #{math.sin(4.5) * $width} 0,
+		$color #{math.cos(5) * $width} #{math.sin(5) * $width} 0,
+		$color #{math.cos(5.5) * $width} #{math.sin(5.5) * $width} 0,
+		$color #{math.cos(6) * $width} #{math.sin(6) * $width} 0;
+}
