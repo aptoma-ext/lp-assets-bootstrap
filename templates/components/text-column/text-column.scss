@@ -22,9 +22,8 @@
 
 		.alf-block {
 			font-family: NoticiaText;
-			font-weight: normal;
 			font-size: 12px;
-			margin: 0 0 var(--text-margin-top) 0;
+			margin: var(--text-margin-top) 0 0;
 			padding: 0;
 			color: var(--color-black);
 
@@ -40,7 +39,12 @@
 
 		h1, h2, h3 {
 			--text-margin-top: var(--baseline-height);
+
+			&.alf-block {
+				font-size: 16px;
+			}
 		}
+
 
 		p {
 			text-indent: 3.7mm;
