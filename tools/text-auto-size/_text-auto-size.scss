@@ -1,4 +1,9 @@
 @mixin text-auto-size-options {
+	&.text-auto-size-lines--auto {
+		--text-auto-size-lines: 0;
+		--text-auto-size-disabled: 0;
+	}
+
 	&.text-auto-size-lines--1 {
 		--text-auto-size-lines: 1;
 		--text-auto-size-disabled: 0;
@@ -38,12 +43,6 @@
 		--alf-text-size-max: var(--text-auto-size-max, 600);
 		--alf-text-lines: var(--text-auto-size-lines, 1);
 		--alf-text-auto-size-disabled: var(--text-auto-size-disabled, 1);
-	}
-
-	&.alf-text-auto-size {
-		// Setting the font size to the average of min/max so it can grow/shrink
-		// This will make sure the text can always be automatically adjusted up or down
-		font-size: calc(((var(--alf-text-size-min) + var(--alf-text-size-max)) / 2) * 1px);
 	}
 
 	@include text-auto-size-options;
