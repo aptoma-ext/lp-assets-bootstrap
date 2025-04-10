@@ -17,3 +17,4 @@ componentOptions:
     - ./tools/margin/options.yml
     - ./tools/overlap/options.yml
     - ./tools/padding/options.yml
+    - ./tools/text-auto-size/options.yml
