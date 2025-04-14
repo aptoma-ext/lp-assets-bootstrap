@@ -10,6 +10,10 @@
 @use "../templates/components/text-column/text-column";
 
 @mixin styles {
+	.alf-component {
+		--alf-is-removable: 1;
+	}
+
 	@include box.component;
 	@include byline.component;
 	@include caption.component;
