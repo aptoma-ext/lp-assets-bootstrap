@@ -13,6 +13,6 @@
     "build": "dredition layoutpreview build -c broadcast"
   },
   "devDependencies": {
-    "@aptoma/dredition-cli": "^1.9.1"
+    "@aptoma/dredition-cli": "^1.9.3"
   }
 }
