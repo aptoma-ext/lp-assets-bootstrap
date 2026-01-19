@@ -89,20 +89,16 @@
 		margin: 0;
 		text-align: var(--text-text-align, left);
 
-		.row {
-			position: relative;
-
-			&::before {
-				content: "";
-				display: block;
-				position: absolute;
-				top: calc(var(--alf-text-top, 0) + 0.02em - var(--text-bg-extra-top, 0mm));
-				height: calc(0.84em + var(--text-bg-extra-top, 0mm) + var(--text-bg-extra-bottom, 0mm));
-				width: calc(var(--alf-text-width) + 0.2em + var(--text-bg-extra-left, 0mm) + var(--text-bg-extra-right, 0mm));
-				left: calc(var(--alf-text-left) - 0.1em - var(--text-bg-extra-left, 0mm));
-				background-color: var(--text-bg-color, transparent);
-				z-index: -1;
-			}
+		.row::before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: calc(var(--alf-text-top, 0) + 0.02em - var(--text-bg-extra-top, 0mm));
+			height: calc(0.84em + var(--text-bg-extra-top, 0mm) + var(--text-bg-extra-bottom, 0mm));
+			width: calc(var(--alf-text-width) + 0.2em + var(--text-bg-extra-left, 0mm) + var(--text-bg-extra-right, 0mm));
+			left: calc(var(--alf-text-left) - 0.1em - var(--text-bg-extra-left, 0mm));
+			background-color: var(--text-bg-color, transparent);
+			z-index: -1;
 		}
 	}
 
