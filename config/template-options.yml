@@ -1,3 +1,31 @@
+.grid-padding-left--{paddingLeft}:
+  title: Page padding left
+  type: string
+  enum:
+    - 2mm
+    - 4mm
+    - 6mm
+    - 8mm
+  enumNames:
+    - 2mm
+    - 4mm
+    - 6mm
+    - 8mm
+
+.grid-padding-right--{paddingRight}:
+  title: Page padding right
+  type: string
+  enum:
+    - 2mm
+    - 4mm
+    - 6mm
+    - 8mm
+  enumNames:
+    - 2mm
+    - 4mm
+    - 6mm
+    - 8mm
+
 .theme--{theme}:
   title: Theme
   type: array
