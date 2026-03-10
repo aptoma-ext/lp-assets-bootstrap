@@ -24,5 +24,10 @@
 			--alf-grid-spine: 20;
 			--alf-grid-column-width: 8.5mm;
 		}
+
+		&.alf-grid--10 {
+			--alf-grid-spine: 10;
+			--alf-grid-column-width: 21mm;
+		}
 	}
 }
