@@ -5,12 +5,24 @@ padding:
     --padding-left:
       title: Padding left
       type: string
+      default: 0mm
+      x-layoutpreview:
+        widget: css-length
     --padding-right:
       title: Padding right
       type: string
+      default: 0mm
+      x-layoutpreview:
+        widget: css-length
     --padding-top:
       title: Padding top
       type: string
+      default: 0mm
+      x-layoutpreview:
+        widget: css-length
     --padding-bottom:
       title: Padding bottom
       type: string
+      default: 0mm
+      x-layoutpreview:
+        widget: css-length
