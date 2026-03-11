@@ -22,8 +22,22 @@
 			font-family: Rubik;
 			font-style: italic;
 			font-weight: 400;
-			font-size: 14pt;
+			font-size: 15.5pt;
 			line-height: 0.9em;
+
+			// this is an example of how to add
+			// a quote symbol before the text
+			&::before {
+					content: "\0051";
+					font-family: Bootstrap;
+					font-size: 40pt;
+					line-height: 20pt;
+					display: block;
+					color: var(--color-blue-gray);
+					float: left;
+					margin-right: 2.7mm;
+					margin-top: 7pt;
+				}
 		}
 
 		.author {
