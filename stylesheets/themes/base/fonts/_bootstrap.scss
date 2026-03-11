@@ -1,0 +1,11 @@
+@mixin font-face {
+	@at-root {
+		@font-face {
+			font-family: Bootstrap;
+			font-style: normal;
+			font-weight: 400;
+			src: url(https://smooth-storage.aptoma.no/users/dre-aptoma/files/assets/static/fonts/Bootstrap/Bootstrap-Regular.otf);
+			-ro-font-embedding-type: all;
+		}
+	}
+}
