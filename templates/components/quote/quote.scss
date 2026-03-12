@@ -11,27 +11,41 @@
 
 		blockquote {
 			margin: 0;
-			padding: 0;
-		}
-
-		.quote-text {
-			margin: 0;
-			font-family: Rubik;
-			font-style: italic;
-			font-weight: 300;
-			font-size: 14pt;
-			line-height: 0.9em;;
-			text-align: center;
 			padding: 4mm;
 		}
 
-		.quote-creator {
-			text-align: right;
+		p {
+			margin: 0;
+		}
+
+		.text {
+			font-family: Rubik;
+			font-style: italic;
+			font-weight: 400;
+			font-size: 15.5pt;
+			line-height: 0.9em;
+
+			// this is an example of how to add
+			// a quote symbol before the text
+			&::before {
+					content: "\0051";
+					font-family: Bootstrap;
+					font-size: 40pt;
+					line-height: 20pt;
+					display: block;
+					color: var(--color-blue-gray);
+					float: left;
+					margin-right: 2.7mm;
+					margin-top: 7pt;
+				}
+		}
+
+		.author {
+			display: block;
 			font-size: 10pt;
 			font-family: Rubik;
 			font-weight: 300;
-			margin: var(--baseline-height) 0 0 0;
-			--alf-hyphenate: 1;
+			margin-top: var(--baseline-height);
 		}
 	}
 }
